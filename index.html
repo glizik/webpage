@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Gabor Lizik</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+
+    <div id="dhead" class="container">
+      <div class="row">
+        <div id="dpic">
+          <img src="assets/me.jpg" class="ppic" alt="me">
+        </div>
+        <div id="ddesc">
+          <h1>Gabor Lizik</h1>
+          <h2>I like computer science 💻📱!</h2>
+          <h2>It's more than 0️⃣s and 1️⃣s!</h2>
+          <div id="dico">
+            <a href="https://twitter.com/glizik"><img src="assets/ctwitter.svg" class="iico" /></a>
+            <a href="https://github.com/glizik"><img src="assets/cgithub.svg" class="iico"/></a>
+            <a href="https://szifon.com/author/glizik"><img src="assets/crss.svg" class="iico" /></a>
+            <img src="assets/cemail.svg" style="cursor: pointer;" class="iico" id="iemail" title="click to reveal" />
+          </div>
+          <div id="demail"></div> <!-- will reveal email -->
+        </div>
+      </div>
+    </div>
+
+    <!-- attempt hiding from spambots :p -->
+    <script type="text/javascript">
+      var e_is_shown = false;
+      document.getElementById('iemail').addEventListener("click", function(){
+        let demail = document.getElementById('demail');
+        demail.innerHTML = 'glizik' + ' _at_ ' + 'gmail' + '.com';
+        demail.style.opacity = e_is_shown ? 0 : 1;
+        e_is_shown = !e_is_shown;
+      })
+    </script>
+    
+  </body>
+</html>
